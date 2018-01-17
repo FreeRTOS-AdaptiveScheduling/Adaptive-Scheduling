@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <math.h>
+
 //hValue:heuristic value
 float alpha, beta;
 
@@ -16,6 +17,7 @@ float probabilityTask(int noOfTask,int taskNo ,float pheromone[50], float hueris
 	}
 
 	probability=pow(pheromone[taskNo],alpha)*pow(hueristicValue[taskNo],beta);
+    return probability;
 
 }
 
